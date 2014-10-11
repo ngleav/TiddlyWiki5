@@ -295,6 +295,15 @@ Command.prototype.execute = function() {
 		pathprefix: pathprefix
 	});
 	this.server.listen(port,host);
+    console.log("properties: ");
+    console.log("	port: " + port);
+    console.log("	rootTiddler: " + rootTiddler);
+    console.log("	renderType: " + renderType);
+    console.log("	serveType: " + serveType);
+    console.log("	username: " + username);
+    console.log("	password: " + password);
+    console.log("	host: " + host);
+    console.log("	pathprefix: " + pathprefix);
 	console.log("Serving on " + host + ":" + port);
 	console.log("(press ctrl-C to exit)");
 	return null;
